@@ -12,6 +12,7 @@ function App() {
     imagem: "https://picsum.photos/id/1011/400/400",
     descricao: "Curtindo a natureza 🌿",
     curtidas: 125,
+    likeada: false
   },
   {
     id: "2",
@@ -20,6 +21,7 @@ function App() {
     imagem: "https://picsum.photos/id/1/400/400",
     descricao: "Estudando React Native 💻",
     curtidas: 89,
+    likeada: true
   },
   {
     id: "3",
@@ -28,6 +30,7 @@ function App() {
     imagem: "https://picsum.photos/id/1025/400/400",
     descricao: "Meu companheiro de aventuras 🐶",
     curtidas: 230,
+    likeada: false
   },
 ];
 
@@ -38,12 +41,12 @@ function App() {
       <TouchableOpacity >
       <Image
       style={styles.logo} 
-      source={{uri: 'https://e7.pngegg.com/pngimages/125/308/png-clipart-logo-brand-instagram-social-media-graphy-instagram-text-photography.png'}}/>
+      source={require('./src/img/logo.png')}/>
       </TouchableOpacity>
       <TouchableOpacity>
       <Image
       style={styles.send} 
-      source={{uri: 'https://www.clipartmax.com/png/middle/318-3188512_icicle-clip-art.png'}}/>
+      source={require('./src/img/send.png')}/>
     </TouchableOpacity>
     </View>
 
